@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("Internal_Images/Wallpaper_PixelArt.png");
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.header {
+    text-align: center;
+    font-size: 36px;
+    margin: 20px 0;
+}
+.credit {
+    text-align: center;
+    font-size: 9px;
+    margin-bottom: 10px;
+}
+.container {
+    display: flex;
+    margin: 20px;
+}
+.calendar {
+    display: grid;
+    grid-template-columns: repeat(4, 180px);
+    grid-template-rows: repeat(3, 180px);
+    grid-gap: 5px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.month {
+    border: 1px solid gray;
+    text-align: center;
+    padding: 5px;
+}
+.month-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+td {
+  border: 1px solid gray;
+  font-size: 10px;
+  padding: 2px;
+  text-align: center;
+}
+a {
+  color: red;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: black;
+}
+.sidebar img {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+}
+.holiday-name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* For phone users */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .calendar {
+        grid-template-columns: repeat(2, 180px);
+        grid-template-rows: auto;
+    }
+    .month {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    .sidebar {
+        width: 90%;
+        margin-top: 20px;
+        text-align: center;
+    }
+}
