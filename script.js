@@ -115,7 +115,7 @@ function WTC() {
 
 function Darkweb() {
     alert("167.254.13.666 Isn't safe, Enter anyway?");
-    window.open("https://www.lomando.com/curse.html");
+    window.open("https://www.lomando.com/main.html");
     var img = document.getElementById("myImage");
     img.src = url = "https://i.pinimg.com/originals/64/aa/a2/64aaa23ecc4fd510dba440161cb04999.jpg";
     document.getElementById("HolidayName").innerHTML = "<b>167.254.13.666</b>";
@@ -128,3 +128,4 @@ function Darkweb() {
     document.body.style.color = "black";
 
 }
+
